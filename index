@@ -1,55 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HINSKE</title>
   <style>
-    :root {
-      --bg: #0d1117;
-      --text: #e6edf3;
-      --accent: #2f81f7;
-    }
-    * {box-sizing:border-box;}
     body {
-      margin:0;
-      font-family:Inter,Arial,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-      min-height:100vh;
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      background: radial-gradient(circle at top, #0b0e14, #000);
+      color: #eaeaea;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
     }
     h1 {
-      font-size:3rem;
-      margin-bottom:0.2em;
-      letter-spacing:2px;
+      font-size: 3rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
     }
     p {
-      margin-top:0;
-      opacity:0.8;
-      margin-bottom:2em;
+      font-size: 1.2rem;
+      opacity: 0.8;
+      max-width: 600px;
+    }
+    nav {
+      margin-top: 2em;
     }
     nav a {
-      display:inline-block;
-      color:var(--accent);
-      text-decoration:none;
-      margin:0.3em 1em;
-      font-size:1.1rem;
+      display: inline-block;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #00aaff;
+      border-bottom: 1px solid transparent;
+      transition: 0.2s;
     }
-    nav a:hover {text-decoration:underline;}
+    nav a:hover {
+      border-color: #00aaff;
+    }
     footer {
-      margin-top:3em;
-      font-size:0.8rem;
-      opacity:0.6;
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      opacity: 0.6;
     }
   </style>
 </head>
 <body>
   <h1>HINSKE</h1>
-  <p>Zentrale Plattform für Daten, KI und Automatisierung.</p>
+  <p>Zentrale Plattform für Daten, KI-Entwicklung und Automatisierung.</p>
 
   <nav>
     <a href="https://data.hinske.de">Datensätze</a>
@@ -61,8 +63,7 @@
 
   <footer>
     <a href="/impressum.html">Impressum</a> ·
-    <a href="/datenschutz.html">Datenschutz</a> ·
-    © 2025 HINSKE
+    <a href="/datenschutz.html">Datenschutz</a> · © 2025 HINSKE
   </footer>
 </body>
 </html>
