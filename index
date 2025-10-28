@@ -5,26 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HINSKE</title>
   <style>
-    body {
-      background:#0a0a0a; color:#eee; font-family:Inter,Arial,sans-serif;
-      display:flex; flex-direction:column; align-items:center; justify-content:center;
-      height:100vh; margin:0;
+    :root {
+      --bg: #0d1117;
+      --text: #e6edf3;
+      --accent: #2f81f7;
     }
-    h1 {letter-spacing:4px; font-weight:600;}
-    a {color:#00b7ff; text-decoration:none; margin:8px 0;}
+    * {box-sizing:border-box;}
+    body {
+      margin:0;
+      font-family:Inter,Arial,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+    }
+    h1 {
+      font-size:3rem;
+      margin-bottom:0.2em;
+      letter-spacing:2px;
+    }
+    p {
+      margin-top:0;
+      opacity:0.8;
+      margin-bottom:2em;
+    }
+    nav a {
+      display:inline-block;
+      color:var(--accent);
+      text-decoration:none;
+      margin:0.3em 1em;
+      font-size:1.1rem;
+    }
+    nav a:hover {text-decoration:underline;}
+    footer {
+      margin-top:3em;
+      font-size:0.8rem;
+      opacity:0.6;
+    }
   </style>
 </head>
 <body>
   <h1>HINSKE</h1>
   <p>Zentrale Plattform für Daten, KI und Automatisierung.</p>
-  <a href="https://data.hinske.de">Datensätze</a>
-  <a href="https://apis.hinske.de">APIs</a>
-  <a href="https://ai.hinske.de">KI</a>
-  <a href="https://blog.hinske.de">Blog</a>
-  <a href="mailto:info@hinske.de">Kontakt</a>
-  <footer style="margin-top:20px;font-size:12px;">
+
+  <nav>
+    <a href="https://data.hinske.de">Datensätze</a>
+    <a href="https://apis.hinske.de">APIs</a>
+    <a href="https://ai.hinske.de">KI</a>
+    <a href="https://blog.hinske.de">Blog</a>
+    <a href="mailto:info@hinske.de">Kontakt</a>
+  </nav>
+
+  <footer>
     <a href="/impressum.html">Impressum</a> ·
-    <a href="/datenschutz.html">Datenschutz</a> · © 2025 HINSKE
+    <a href="/datenschutz.html">Datenschutz</a> ·
+    © 2025 HINSKE
   </footer>
 </body>
 </html>
